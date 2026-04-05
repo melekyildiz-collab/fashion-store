@@ -1,0 +1,18 @@
+
+    .title {
+        font-size: 36px;
+        color: #333;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .link {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #111;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+    }

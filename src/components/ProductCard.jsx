@@ -1,36 +1,23 @@
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
+import styles from "./ProductCard.module.css";
 
 function ProductCard({ name, price, image }) {
 
   const { addToCart } = useContext(CartContext);
 
   return (
-    <div style={styles.card}>
-      <img src={image} alt={name} style={styles.image} />
-      <h3>{name}</h3>
-      <p>{price} €</p>
+    <div className={styles.card}>
+      <img src={image} alt={name} className={styles.image} />
+      <h3 className={styles.title}>{name}</h3>
+      <p className={styles.price}>{price} €</p>
 
-      <button onClick={() => addToCart({ name, price, image })}>
+      <button className={styles.button} onClick={() => addToCart({ name, price, image })}>
         Ajouter
       </button>
     </div>
   );
 }
 
-const styles = {
-  card: {
-    backgroundColor: "white",
-    padding: "15px",
-    borderRadius: "10px",
-    width: "200px",
-    textAlign: "center",
-    boxShadow: "0 5px 15px rgba(0,0,0,0.1)"
-  },
-  image: {
-    width: "100%",
-    borderRadius: "10px"
-  }
-};
 
 export default ProductCard;

@@ -1,0 +1,26 @@
+.aboutContainer {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aboutTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.aboutText {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+.aboutHighlight {
+  margin-top: 40px;
+  font-style: italic;
+  color: #000;
+}
