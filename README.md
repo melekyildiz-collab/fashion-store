@@ -1,16 +1,46 @@
-# React + Vite
+# 🛍️ Fashion Shop App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Description
+Ce projet est une application web de e-commerce développée en React.  
+Elle permet aux utilisateurs de parcourir des produits de mode, de les ajouter au panier et d'interagir avec une interface moderne et responsive.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 👥 Répartition des tâches
 
-## React Compiler
+### 👩‍💻 Melek YILDIZ
+- Création de la structure globale du projet
+- Mise en place des pages : Home, Shop, About, Cart
+- Fonctionnalités principales :
+  - Affichage des produits
+  - Ajout au panier (CartContext)
+  - Navigation entre les pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 👩‍🎨 Tabitha GLELE
+- Refonte complète du design (UI/UX)
+- Structure CSS modulaire (`module.css`)
+- Organisation du code (séparation composants / styles)
+- Création de composants supplémentaires (Footer)
+- Ajout de petites fonctionnalités :
+  - Améliorations visuelles du panier
+  - Pop-up d’affichage d’image produit
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Fonctionnalités
+
+- 🛍️ Affichage des produits
+- 🔍 Barre de recherche
+- 🛒 Ajout au panier
+- 💰 Calcul du total
+- 👁️ Aperçu image (popup)
+- ❤️ Ajout aux favoris
+- 🎨 Interface moderne et responsive
+
+---
+
+## 🛠️ Technologies utilisées
+
+- React
+- CSS Modules
+- JavaScript (ES6)
