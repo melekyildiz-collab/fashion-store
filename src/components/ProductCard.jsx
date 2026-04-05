@@ -3,7 +3,6 @@ import { CartContext } from "../context/CartContext";
 import styles from "./ProductCard.module.css";
 
 function ProductCard({ name, price, image }) {
-
   const { addToCart } = useContext(CartContext);
 
   return (
@@ -12,12 +11,14 @@ function ProductCard({ name, price, image }) {
       <h3 className={styles.title}>{name}</h3>
       <p className={styles.price}>{price} €</p>
 
-      <button className={styles.button} onClick={() => addToCart({ name, price, image })}>
-        Ajouter
+      <button
+        className={styles.button}
+        onClick={() => addToCart({ name, price, image })}
+      >
+        Ajouter au panier
       </button>
     </div>
   );
 }
-
 
 export default ProductCard;

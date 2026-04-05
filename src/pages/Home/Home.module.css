@@ -1,0 +1,51 @@
+.hero {
+    padding: 120px 20px;
+    text-align: center;
+    background-image:
+      url('https://images.unsplash.com/photo-1521334884684-d80222895322');
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+
+  .title {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+
+
+  .button {
+    padding: 12px 30px;
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .section{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
