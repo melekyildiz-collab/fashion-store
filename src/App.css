@@ -1,0 +1,14 @@
+body {
+  font-family: Arial;
+  text-align: center;
+}
+
+nav {
+  margin: 20px;
+}
+
+a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
