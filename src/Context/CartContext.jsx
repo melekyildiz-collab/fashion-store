@@ -5,33 +5,39 @@ export const CartContext = createContext();
 export function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
 
+
   const addToCart = (product) => {
-    setCart([...cart, product]);
+    setCart((prevCart) => [...prevCart, product]);
   };
+
 
   const removeFromCart = (index) => {
-    setCart(cart.filter((_, i) => i !== index));
+    setCart((prevCart) => prevCart.filter((_, i) => i !== index));
   };
 
+  
   const increaseQty = (index) => {
-    const newCart = [...cart];
-
-    if (!newCart[index].qty) {
-      newCart[index].qty = 1;
-    }
-
-    newCart[index].qty += 1;
-    setCart(newCart);
+    setCart((prevCart) =>
+      prevCart.map((item, i) =>
+        i === index
+          ? { ...item, qty: (item.qty || 1) + 1 }
+          : item
+      )
+    );
   };
 
+  
   const decreaseQty = (index) => {
-    const newCart = [...cart];
-
-    if (newCart[index].qty > 1) {
-      newCart[index].qty -= 1;
-    }
-
-    setCart(newCart);
+    setCart((prevCart) =>
+      prevCart.map((item, i) =>
+        i === index
+          ? {
+              ...item,
+              qty: item.qty > 1 ? item.qty - 1 : 1,
+            }
+          : item
+      )
+    );
   };
 
   return (
