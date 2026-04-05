@@ -1,4 +1,5 @@
-import {Routes, Route } from "react-router-dom";
+import {Routes, Route, BrowserRouter } from "react-router-dom";
+import { CartProvider } from "./context/CartContext";
 import Home from "./pages/Home/Home";
 import Shop from "./pages/Shop/Shop";
 import About from "./pages/About/About";
@@ -9,6 +10,8 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
+      <CartProvider>
+      <BrowserRouter>
       <NavBar />
 
       <Routes>
@@ -19,6 +22,8 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
+      </BrowserRouter>
+      </CartProvider>
     </>
   );
 }

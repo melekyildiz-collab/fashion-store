@@ -40,7 +40,7 @@ function Shop() {
      {
       name: "Chemise bleue",
       price: 50,
-      image: "/images/chemise-bleue.jpg"
+      image: "/images/chemise-bleu.jpg"
     } ,
       { 
       name: "Jupe plissée",
